@@ -5,7 +5,6 @@ function syncUsers()
             return
         end
 
-        print("[RP-Admin Sync] Sende Daten an API.")
         PerformHttpRequest("https://tnynpbxxfqckchzzzjhx.supabase.co/functions/v1/esx-player-sync", function(statusCode, resultData, resultHeaders, errorData)
             if statusCode == 200 then
                 print("[RP-Admin Sync] Status: 200;  Synchronisation erfolgreich durchgeführt.")
